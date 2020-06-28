@@ -1,0 +1,12 @@
+name: Scheduler
+on:
+  schedule:
+    - cron:  '0,20,40 13 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: boot ola task
+      run: curl https://olove-archive-and-ok-ng.herokuapp.com/boot-archiver
