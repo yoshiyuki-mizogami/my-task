@@ -1,7 +1,7 @@
 name: Scheduler
 on:
   schedule:
-    - cron:  '0,20,40 13 * * *'
+    - cron:  '0/5 13 * * *'
 
 jobs:
   build:
